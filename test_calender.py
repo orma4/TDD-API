@@ -69,33 +69,33 @@ class calender_test(unittest.TestCase):
                     'Parashat Vaera', '2020-01-27', "Rosh Chodesh Sh'vat"]
         self.assertEqual(result, expected)
 
-    # @patch('calender_jewish.requests.get')
-    # def test_set_date_2(self, json_mock):
-    #     """
-    #             Test 6
-    #             """
-    #     set_date_data = {"location": {"geo": "none"},
-    #                      "link": "https://www.hebcal.com",
-    #                      "title": "Hebcal November 2011",
-    #                      "date": "2020-03-15T15:44:11-00:00",
-    #                      "items":
-    #                          {"category": "holiday", "hebrew": "בדיקת מוק", "link":
-    #                           "https://www.hebcal.com", "date": "2011-11-11",
-    #                           "title": "testing holiday"}
-    #                      }
-    #
-    #     json_mock.return_value = MagicMock(ok=True)
-    #     json_mock.return_value.json.return_value = set_date_data
-    #     print(len(json_mock))
-    #     stub = {"month": 11, "year": 2011}
-    #
-    #     expected_item = {"category": "holiday", "hebrew": "בדיקת מוק",
-    #                      "link": "https://www.hebcal.com",
-    #                      "date": "2011-11-11", "title": "testing holiday"}
-    #
-    #     date_result = calender_jewish.holidays_by_date(**stub)
-    #     self.assertDictEqual(expected_item, date_result)
-    #
+    @patch('calender_jewish.requests.get')
+    def test_set_date_2(self, json_mock):
+        """
+                Test 6
+                """
+        set_date_data = {"location": {"geo": "none"},
+                         "link": "https://www.hebcal.com",
+                         "title": "Hebcal November 2011",
+                         "date": "2020-03-15T15:44:11-00:00",
+                         "items":
+                             {"category": "holiday", "hebrew": "בדיקת מוק", "link":
+                              "https://www.hebcal.com", "date": "2011-11-11",
+                              "title": "testing holiday"}
+                         }
+
+        json_mock.return_value = MagicMock(ok=True)
+        json_mock.return_value.json.return_value = set_date_data
+        print(len(json_mock))
+        stub = {"month": 11, "year": 2011}
+
+        expected_item = {"category": "holiday", "hebrew": "בדיקת מוק",
+                         "link": "https://www.hebcal.com",
+                         "date": "2011-11-11", "title": "testing holiday"}
+
+        date_result = calender_jewish.holidays_by_date(**stub)
+        self.assertDictEqual(expected_item, date_result)
+
     # def test_fasting_dates_1(self):
     #     """
     #             Test 7
