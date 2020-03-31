@@ -56,19 +56,19 @@ class calender_test(unittest.TestCase):
         result = calender_jewish.conversion_output(stub_heb_year, stub_heb_month, stub_heb_day)
         self.assertEqual(result, expected)
 
-    # def test_set_date_1(self):
-    #     """
-    #             Test 5
-    #             """
-    #     stub_month = "1"
-    #     stub_year = "2020"
-    #     result = calender_jewish.set_date(stub_month, stub_year)
-    #     expected = ['2020-01-04', 'Parashat Vayigash', '2020-01-07', "Asara B'Tevet",
-    #                 '2020-01-11', 'Parashat Vayechi',
-    #                 '2020-01-18', "Parashat Shemot", '2020-01-25',
-    #                 'Parashat Vaera', '2020-01-27', "Rosh Chodesh Sh'vat"]
-    #     self.assertEqual(result, expected)
-    #
+    def test_set_date_1(self):
+        """
+                Test 5
+                """
+        stub_month = "1"
+        stub_year = "2020"
+        result = calender_jewish.set_date(stub_month, stub_year)
+        expected = ['2020-01-04', 'Parashat Vayigash', '2020-01-07', "Asara B'Tevet",
+                    '2020-01-11', 'Parashat Vayechi',
+                    '2020-01-18', "Parashat Shemot", '2020-01-25',
+                    'Parashat Vaera', '2020-01-27', "Rosh Chodesh Sh'vat"]
+        self.assertEqual(result, expected)
+
     # @patch('calender_jewish.requests.get')
     # def test_set_date_2(self, json_mock):
     #     """
