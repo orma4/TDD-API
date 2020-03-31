@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.8
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: |
+            pip install -r requirements.txt
+      - run:
+          name: run tests and linter
+          command: |
+            python3 test_calender.py
+            pylint main.py
