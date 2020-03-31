@@ -116,15 +116,15 @@ class calender_test(unittest.TestCase):
         result = calender_jewish.print_fasts(stub1, stub2)
         self.assertEqual(result, expected)
 
-    # def test_fasting_dates_3(self):
-    #     """
-    #             Test 9
-    #             """
-    #     stub1 = "2"
-    #     stub2 = "2020"
-    #     expected = []
-    #     result = calender_jewish.print_fasts(stub1, stub2)
-    #     self.assertEqual(result, expected)
+    def test_fasting_dates_3(self):
+        """
+                Test 9
+                """
+        stub1 = "2"
+        stub2 = "2020"
+        expected = []
+        result = calender_jewish.print_fasts(stub1, stub2)
+        self.assertEqual(result, expected)
     #
     # def test_fasting_dates_4(self):
     #     """
