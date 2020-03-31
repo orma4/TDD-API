@@ -1,6 +1,6 @@
-# TDD_HW2 Project
+# TDD HW2 Project
 
-# Jewish calendar/Converter
+# Jewish Calendar/Converter
 
 ## Description:
 The API I chose is the Hebrew calendar API which divides into 2 sub api’s- Jewish calendar REST API and Hebrew Date Converter REST API.
