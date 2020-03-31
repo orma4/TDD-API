@@ -96,15 +96,15 @@ class calender_test(unittest.TestCase):
         date_result = calender_jewish.holidays_by_date(**stub)
         self.assertDictEqual(expected_item, date_result)
 
-    # def test_fasting_dates_1(self):
-    #     """
-    #             Test 7
-    #             """
-    #     stub1 = "3"
-    #     stub2 = "2020"
-    #     expected = ["2020-03-09", "Ta'anit Esther"]
-    #     result = calender_jewish.print_fasts(stub1, stub2)
-    #     self.assertEqual(result, expected)
+    def test_fasting_dates_1(self):
+        """
+                Test 7
+                """
+        stub1 = "3"
+        stub2 = "2020"
+        expected = ["2020-03-09", "Ta'anit Esther"]
+        result = calender_jewish.print_fasts(stub1, stub2)
+        self.assertEqual(result, expected)
     #
     # def test_fasting_dates_2(self):
     #     """
