@@ -45,17 +45,17 @@ class calender_test(unittest.TestCase):
         result = calender_jewish.conversion_output(stub_heb_year, stub_heb_month, stub_heb_day)
         self.assertEqual(result, expected)
 
-    # def test_conversion_output_4(self):
-    #     """
-    #             Test 4
-    #             """
-    #     stub_heb_year = 4500
-    #     stub_heb_month = "Adar2"
-    #     stub_heb_day = 11
-    #     expected = [740, 2, 17]
-    #     result = calender_jewish.conversion_output(stub_heb_year, stub_heb_month, stub_heb_day)
-    #     self.assertEqual(result, expected)
-    #
+    def test_conversion_output_4(self):
+        """
+                Test 4
+                """
+        stub_heb_year = 4500
+        stub_heb_month = "Adar2"
+        stub_heb_day = 11
+        expected = [740, 2, 17]
+        result = calender_jewish.conversion_output(stub_heb_year, stub_heb_month, stub_heb_day)
+        self.assertEqual(result, expected)
+
     # def test_set_date_1(self):
     #     """
     #             Test 5
