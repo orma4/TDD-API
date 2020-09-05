@@ -1,4 +1,4 @@
-# TDD HW2 Project
+# TDD & API Project
 
 # Jewish Calendar/Converter
 
