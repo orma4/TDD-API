@@ -1,4 +1,4 @@
-# TDD & API Project
+# TDD & API Project [![CircleCI](https://app.circleci.com/pipelines/github/orma4/TDD-API.svg?style=svg)](https://app.circleci.com/pipelines/github/orma4/TDD-API)
 
 # Jewish Calendar/Converter
 
